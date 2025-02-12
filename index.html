@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="text">
+        <h1>Apply Now for MBBS Abroad</h1>
+    </div>
+    </header>
+    <section class="container mx my-8 p-6">
+        <div class="text-1">
+        <h2>Why Study MBBS Abroad?</h2>
+        <ul class="list-disc list-inside">
+        <li>Affordable tuition fees</li>
+        <li>Globally recognized degrees</li>
+        <li>High-quality education</li>
+        <li>International exposure</li>
+        </ul>
+    </section>
+ <section class="container mx-auto my-8 p-6">
+    <div class="Countries">
+     <h2>Top Countries for MBBS</h2> 
+     <p>Russia, Uzbekistan, Kazakhstan, Philippines, Georgia, Kyrgyzstan, Egypt.</p>   
+    </div>
+ </section>
+    <section class="container mx-auto my-8 p-6">
+        <h2>Admission Process & Eligibility</h2>
+        <p>Follow these steps to apply:</p>
+        <ul class="list-disc list-inside">
+            <li>Choose a country and university</li>
+            <li>Submit application documents</li>
+            <li>Receive admission confirmation</li>
+            <li>Apply for a student visa</li>
+            <li>Prepare for departure</li>
+        </ul>
+    </div>
+    </section>
+    <section class="container">
+        <h2>Apply Now</h2>
+        <form id="leadForm" class="space-y-4">
+            <input type="text" name="name" placeholder="full Name">
+            <input type="email"Name="email"placeholder="Email">
+            <input type="tel" name="phone"placeholder="Phone Number">
+            <select name="country">
+                <option value="">Preferred Country</option>
+                <option value="Russia">Russia</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Egypt">Egypt</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>  
+ <script src="./js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.getElementById("leadForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Your application has been submitted!");
+            });
+        </script>
+</body>
+</html>
